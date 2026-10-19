@@ -9,7 +9,7 @@ import {createPreferenceSync} from './preference-sync.js';
 
 const $=selector=>document.querySelector(selector),esc=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const fallback={sender:'Anh',receiver:'Em yêu',occasion:'20 · 10',dedication:'Một thế giới nhỏ, dành riêng cho người anh thương.',letter:['Em yêu à,','Chúc em luôn được yêu thương, bình yên và tự do làm những điều mình thích. Cảm ơn em vì đã ở đây.'],cardMessage:'Mong những dịu dàng của thế giới đều tìm đến em.',photos:[]};
-let content=fallback;try{const r=await fetch('./content.json');if(r.ok)content={...fallback,...await r.json()};}catch{/* The gift still opens offline after its resources have loaded. */}
+let content=fallback;try{const r=await fetch('./content.json',{cache:'no-cache'});if(r.ok)content={...fallback,...await r.json()};}catch{/* The gift still opens offline after its resources have loaded. */}
 content.letter=Array.isArray(content.letter)&&content.letter.every(p=>typeof p==='string')&&content.letter.length?content.letter:fallback.letter;
 let storage;try{storage=localStorage;}catch{/* Browser-local persistence is optional. */}
 let journey=loadJourney(storage,content),current=progress(journey.gifts).next,world=null,viewEpoch=0,letterPage=0,allPhotos=[],photoIndex=0,uploadBusy=false,toastTimer,cardStyle='ballet',cardFormat='post',cardOverride=null,cardEpoch=0,photoChoiceEpoch=0;
