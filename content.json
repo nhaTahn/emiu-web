@@ -11,5 +11,30 @@
     "Cảm ơn em vì đã ở đây. Những điều nhỏ xíu cũng trở nên đặc biệt hơn khi được cùng em đi qua."
   ],
   "cardMessage": "Mong những dịu dàng của thế giới đều tìm đến em.",
-  "photos": []
+  "photos": [
+    {
+      "src": "./assets/photos/hen-ho-51b08a3d2872072e.webp",
+      "caption": "Một khoảnh khắc có hai đứa mình."
+    },
+    {
+      "src": "./assets/photos/hen-ho-c8eb3b137e67bcb6.webp",
+      "caption": "Một khoảnh khắc có hai đứa mình."
+    },
+    {
+      "src": "./assets/photos/hen-ho-e9ecbd105f4ace5d.webp",
+      "caption": "Một khoảnh khắc có hai đứa mình."
+    },
+    {
+      "src": "./assets/photos/hen-ho-44143de837c8a39f.webp",
+      "caption": "Một khoảnh khắc có hai đứa mình."
+    },
+    {
+      "src": "./assets/photos/hen-ho-f37defe32a4546e1.webp",
+      "caption": "Một khoảnh khắc có hai đứa mình."
+    },
+    {
+      "src": "./assets/photos/hen-ho-2fca7257359edb7a.webp",
+      "caption": "Một khoảnh khắc có hai đứa mình."
+    }
+  ]
 }

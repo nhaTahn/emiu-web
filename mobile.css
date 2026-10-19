@@ -49,6 +49,13 @@
   .preference-share-actions { display:flex;gap:8px }
   .preference-share-actions>button { flex:1;min-height:48px;font-size:12px;padding:11px }
   #preference-text { height:215px;font-size:13px;line-height:1.7;resize:none }
+  .preference-sync-line { font-size:9px;line-height:1.7;color:#89556e;margin-top:7px;display:flex;align-items:center;gap:6px }
+  #preference-sync-feedback { display:flex;gap:8px;align-items:center;border:1px solid #e5cad8;background:#f6e7ef;border-radius:11px;padding:9px 11px;margin-top:10px }
+  #preference-sync-detail { font-size:10px;line-height:1.6;flex:1;display:flex;align-items:center;gap:6px }
+  #preference-sync-retry { min-height:44px;padding:7px 10px;border:1px solid #b987a1;border-radius:9px;font-size:10px;flex-shrink:0 }
+  [data-state=sending]::before { content:'';width:11px;height:11px;flex:0 0 11px;border:2px solid #d9bccb;border-top-color:#82506a;border-radius:50%;animation:preference-spin .8s linear infinite }
+  @keyframes preference-spin { to { transform:rotate(360deg) } }
+  @media(prefers-reduced-motion:reduce) { [data-state=sending]::before { animation:none;border-style:dotted } }
 
   @media(max-width:760px) {
     body { height:100svh;min-height:0;overflow:hidden;display:flex;flex-direction:column }
