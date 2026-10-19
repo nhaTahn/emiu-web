@@ -1,5 +1,5 @@
 {
-  "enabled": false,
+  "enabled": true,
   "eventId": "emiu-2010-2026",
-  "endpoint": ""
+  "endpoint": "https://script.google.com/macros/s/AKfycbyOnwmHQtzar1w1LzPHOxVXa79-ZSq4sBSoOFz5FdaLI2vedZTzowzwlMZfpyfyrasPpw/exec"
 }
